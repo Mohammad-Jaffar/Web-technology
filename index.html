@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Jaffar | Portfolio</title>
+
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <button class="theme-toggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+
+  <header>
+    <div class="container">
+      <h1>Mohammad Jaffar</h1>
+      <p>Web Developer | C++ Programmer | Problem Solver</p>
+      <a href="resume.pdf" download class="btn">Download Resume <i class="fas fa-download"></i></a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate web developer who loves building user-friendly websites using HTML, CSS, and JavaScript. I also have strong experience with C and C++. I enjoy solving real-world problems with efficient and elegant code.
+      </p>
+    </div>
+  </section>
+
+  <section class="social">
+    <div class="container">
+      <h2>Connect With Me</h2>
+      <div class="social-links">
+        <a href="https://github.com/Mohammad-Jaffar" target="_blank" class="github"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/mohammad-jaffar-2508b2372" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:mohammadjaffar057@gmail.com" class="email"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://x.com/_Mohammadjaffar" target="_blank" class="twitter"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Mohammad Jaffar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.theme-toggle');
+    const body = document.body;
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      toggle.innerHTML = body.classList.contains('dark')
+        ? '<i class="fas fa-sun"></i>'
+        : '<i class="fas fa-moon"></i>';
+    });
+  </script>
+</body>
+</html>
