@@ -130,37 +130,6 @@ body.dark .social {
   opacity: 0.9;
 }
 
-/* Contact Form */
-.contact {
-  margin-top: 2rem;
-  background: #fff;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-body.dark .contact {
-  background: #1e1e1e;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact input,
-.contact textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-family: inherit;
-}
-
-.contact textarea {
-  resize: vertical;
-}
-
 /* Footer */
 footer {
   text-align: center;
